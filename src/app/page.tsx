@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section ref={containerRef} className="relative h-screen w-full overflow-hidden flex items-center justify-center">
+      <section ref={containerRef} className="relative h-[100dvh] w-full overflow-hidden flex items-center justify-center">
         <motion.div style={{ y, opacity }} className="absolute inset-0 z-0">
           <Image
             src="/images/hero.png"
@@ -43,7 +43,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-            className="font-serif text-6xl md:text-8xl lg:text-9xl tracking-tight mb-8"
+            className="font-serif text-4xl sm:text-5xl md:text-8xl lg:text-9xl tracking-tight mb-8"
           >
             Aurelia
           </motion.h1>
@@ -81,7 +81,7 @@ export default function Home() {
 
       {/* Content */}
         {/* Philosophy Section */}
-        <section className="py-32 px-6 md:px-12 bg-background relative z-20">
+        <section className="py-32 px-6 md:px-12 bg-background relative z-20 overflow-hidden">
           <div className="container mx-auto max-w-4xl text-center">
             <motion.div
               initial={{ opacity: 0, y: 40 }}
@@ -98,14 +98,14 @@ export default function Home() {
         </section>
 
         {/* Featured Dish */}
-        <section className="py-20 px-6 md:px-12 bg-background">
+        <section className="py-20 px-6 md:px-12 bg-background overflow-hidden">
           <div className="container mx-auto flex flex-col md:flex-row items-center gap-16">
             <motion.div 
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: false }}
               transition={{ duration: 1 }}
-              className="w-full md:w-1/2 relative h-[70vh]"
+              className="w-full md:w-1/2 relative h-[50vh] md:h-[70vh]"
             >
               <Image
                 src="/images/food_1.png"
@@ -122,7 +122,7 @@ export default function Home() {
               className="w-full md:w-1/2"
             >
               <h3 className="uppercase tracking-widest text-xs text-accent mb-4 font-semibold">Signature</h3>
-              <h2 className="font-serif text-5xl mb-8 heading-underline">Ocean&apos;s Whisper</h2>
+              <h2 className="font-serif text-4xl md:text-5xl mb-8 heading-underline">Ocean&apos;s Whisper</h2>
               <p className="font-light text-foreground/70 mb-8 mt-10 leading-relaxed">
                 Diver scallops seared to perfection, resting on a bed of squid ink risotto, delicately garnished with sea foam and micro sorrel. A true testament to our commitment to the sea.
               </p>

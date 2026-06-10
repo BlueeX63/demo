@@ -13,7 +13,7 @@ export default function Contact() {
           transition={{ duration: 0.8 }}
           className="text-center mb-20"
         >
-          <h1 className="font-serif text-6xl md:text-8xl mb-12 heading-underline heading-underline-center">Reservations</h1>
+          <h1 className="font-serif text-5xl md:text-8xl mb-12 heading-underline heading-underline-center">Reservations</h1>
           <p className="text-foreground/60 font-light uppercase tracking-widest text-sm max-w-xl mx-auto mt-10">
             Secure your table at Aurelia
           </p>

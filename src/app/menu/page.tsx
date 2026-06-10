@@ -43,7 +43,7 @@ export default function Menu() {
           transition={{ duration: 0.8 }}
           className="text-center mb-32"
         >
-          <h1 className="font-serif text-6xl md:text-8xl mb-12 heading-underline heading-underline-center">The Menu</h1>
+          <h1 className="font-serif text-5xl md:text-8xl mb-6 heading-underline heading-underline-center">Menu</h1>
           <p className="text-foreground/60 font-light uppercase tracking-widest text-sm mt-10">Autumn / Winter Collection</p>
         </motion.div>
 
@@ -61,7 +61,7 @@ export default function Menu() {
               )}
             >
               {/* Category Image */}
-              <div className="w-full md:w-1/2 h-[50vh] md:h-[70vh] relative rounded-sm overflow-hidden group">
+              <div className="w-full md:w-1/2 relative h-[40vh] md:h-[60vh] rounded-sm overflow-hidden group">
                 <Image
                   src={category.image}
                   alt={category.title}
