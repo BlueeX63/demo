@@ -6,20 +6,15 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
 export default function Home() {
-  const containerRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start start", "end start"],
-  });
+  const { scrollY } = useScroll();
 
-  const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
-  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
+  const opacity = useTransform(scrollY, [0, 600], [1, 0]);
 
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section ref={containerRef} className="relative h-[100dvh] w-full overflow-hidden flex items-center justify-center">
-        <motion.div style={{ y, opacity }} className="absolute inset-0 z-0">
+      <section className="relative h-[100dvh] w-full overflow-hidden flex items-center justify-center">
+        <motion.div style={{ opacity }} className="absolute inset-0 z-0">
           <Image
             src="/images/hero.png"
             alt="Aurelia Interior"
