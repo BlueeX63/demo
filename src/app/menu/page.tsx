@@ -66,6 +66,8 @@ export default function Menu() {
                   src={category.image}
                   alt={category.title}
                   fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  priority={idx === 0}
                   className="object-cover group-hover:scale-105 transition-transform duration-1000"
                 />
                 <div className="absolute inset-0 bg-black/10" />

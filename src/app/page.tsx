@@ -19,6 +19,7 @@ export default function Home() {
             src="/images/hero.png"
             alt="Aurelia Interior"
             fill
+            sizes="100vw"
             className="object-cover"
             priority
           />
@@ -106,6 +107,7 @@ export default function Home() {
                 src="/images/food_1.png"
                 alt="Signature Dish"
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover rounded-sm"
               />
             </motion.div>

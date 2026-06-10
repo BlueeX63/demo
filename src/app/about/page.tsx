@@ -32,8 +32,10 @@ export default function About() {
           >
             <Image
               src="/images/food_2.png"
-              alt="Artisan Cocktail"
+              alt="Culinary Creation"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              priority
               className="object-cover rounded-sm"
             />
           </motion.div>
