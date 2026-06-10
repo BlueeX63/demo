@@ -27,15 +27,15 @@ export default function PageTransition() {
 
   const anim = {
     initial: { 
-      top: "-100vh",
+      y: "-100vh",
       transition: { duration: 0 }
     },
     in: (i: number) => ({
-      top: 0,
+      y: "0vh",
       transition: { duration: 0.5, delay: 0.05 * i, ease: [0.22, 1, 0.36, 1] as const }
     }),
     out: (i: number) => ({
-      top: "100vh",
+      y: "100vh",
       transition: { duration: 0.5, delay: 0.05 * i, ease: [0.22, 1, 0.36, 1] as const }
     })
   };

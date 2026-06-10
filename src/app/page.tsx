@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="relative h-[100dvh] w-full overflow-hidden flex items-center justify-center">
+      <section className="relative h-screen w-full overflow-hidden flex items-center justify-center">
         <motion.div style={{ opacity }} className="absolute inset-0 z-0">
           <Image
             src="/images/hero.png"
@@ -68,7 +68,7 @@ export default function Home() {
           <div className="w-[1px] h-12 bg-white/30 relative overflow-hidden">
             <motion.div 
               className="absolute top-0 left-0 w-full h-1/2 bg-white"
-              animate={{ top: ["-50%", "100%"] }}
+              animate={{ y: ["-100%", "200%"] }}
               transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
             />
           </div>
